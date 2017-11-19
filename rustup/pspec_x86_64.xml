@@ -1,0 +1,39 @@
+<PISI>
+    <Source>
+        <Name>rustup</Name>
+        <Packager>
+            <Name>Jimmy Bergström</Name>
+            <Email>thekwarf@gmail.com</Email>
+        </Packager>
+        <License>MIT</License>
+        <License>Apache-2.0</License>
+        <PartOf>programming.tools</PartOf>
+        <Summary xml:lang="en">The Rust toolchain installer</Summary>
+        <Description xml:lang="en">rustup installs The Rust Programming Language from the official release channels,
+enabling you to easily switch between stable, beta, and nightly compilers and keep them updated.
+It makes cross-compiling simpler with binary builds of the standard library for common platforms.
+</Description>
+        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://solus-project.com/sources/README.Solus</Archive>
+    </Source>
+    <Package>
+        <Name>rustup</Name>
+        <Summary xml:lang="en">The Rust toolchain installer</Summary>
+        <Description xml:lang="en">rustup installs The Rust Programming Language from the official release channels,
+enabling you to easily switch between stable, beta, and nightly compilers and keep them updated.
+It makes cross-compiling simpler with binary builds of the standard library for common platforms.
+</Description>
+        <PartOf>programming.tools</PartOf>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2017-11-19</Date>
+            <Version>1.6.0</Version>
+            <Comment>Packaging update</Comment>
+            <Name>Jimmy Bergström</Name>
+            <Email>thekwarf@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

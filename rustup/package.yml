@@ -1,0 +1,27 @@
+name: rustup
+version: 1.6.0
+release: 1
+source:
+  - https://github.com/rust-lang-nursery/rustup.rs/archive/1.6.0.tar.gz : 928348f6770fdc391eea04bb31f9fec4238efba19502dd354d59871884b01189
+license:
+  - MIT
+  - Apache-2.0
+component: programming.tools
+summary: The Rust toolchain installer
+description: |
+  rustup installs The Rust Programming Language from the official release channels,
+  enabling you to easily switch between stable, beta, and nightly compilers and keep them updated.
+  It makes cross-compiling simpler with binary builds of the standard library for common platforms.
+builddeps:
+  - cargo
+networking: true
+build: |
+  cargo build --release --features no-self-update --bin rustup-init
+install: |
+  install -Dm755 $workdir/target/release/rustup-init $installdir/usr/bin/rustup
+  ln -s /usr/bin/rustup $installdir/usr/bin/cargo
+  ln -s /usr/bin/rustup $installdir/usr/bin/rustc
+  ln -s /usr/bin/rustup $installdir/usr/bin/rustdoc
+  ln -s /usr/bin/rustup $installdir/usr/bin/rust-gdb
+  ln -s /usr/bin/rustup $installdir/usr/bin/rust-lldb
+  ln -s /usr/bin/rustup $installdir/usr/bin/rls
