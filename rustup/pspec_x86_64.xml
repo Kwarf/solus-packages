@@ -29,8 +29,8 @@ It makes cross-compiling simpler with binary builds of the standard library for 
     </Package>
     <History>
         <Update release="1">
-            <Date>2017-11-19</Date>
-            <Version>1.6.0</Version>
+            <Date>2017-12-11</Date>
+            <Version>1.7.0</Version>
             <Comment>Packaging update</Comment>
             <Name>Jimmy Bergström</Name>
             <Email>thekwarf@gmail.com</Email>

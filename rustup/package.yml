@@ -1,8 +1,8 @@
 name: rustup
-version: 1.6.0
+version: 1.7.0
 release: 1
 source:
-  - https://github.com/rust-lang-nursery/rustup.rs/archive/1.6.0.tar.gz : 928348f6770fdc391eea04bb31f9fec4238efba19502dd354d59871884b01189
+  - https://github.com/rust-lang-nursery/rustup.rs/archive/1.7.0.tar.gz : 8ee4602ca471594e879b9c74b65261355d055f815406854ba330129eab9a034f
 license:
   - MIT
   - Apache-2.0
